@@ -1,0 +1,279 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signpage"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SignActivity" >
+
+    <TextView
+        android:id="@+id/NameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PasswordTextView1"
+        android:layout_below="@+id/PasswordTextView2"
+        android:layout_marginTop="20dp"
+        android:text="姓名："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/SexTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/NameTextView"
+        android:layout_below="@+id/NameTextView"
+        android:layout_marginTop="20dp"
+        android:text="性別："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/AgeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SexTextView"
+        android:layout_below="@+id/SexTextView"
+        android:layout_marginTop="20dp"
+        android:text="生日："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/EmailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/IdTextView"
+        android:layout_below="@+id/IdTextView"
+        android:layout_marginTop="20dp"
+        android:text="電子郵件："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/TelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EmailTextView"
+        android:layout_below="@+id/EmailTextView"
+        android:layout_marginTop="20dp"
+        android:text="電話："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/IdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AgeTextView"
+        android:layout_below="@+id/AgeTextView"
+        android:layout_marginTop="20dp"
+        android:text="身分證："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/FamilynameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TelTextView"
+        android:layout_below="@+id/TelTextView"
+        android:layout_marginTop="20dp"
+        android:text="家人姓名："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/FamilytelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/FamilynameTextView"
+        android:layout_below="@+id/FamilynameTextView"
+        android:layout_marginTop="20dp"
+        android:text="家人電話："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/IdEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/IdTextView"
+        android:layout_alignLeft="@+id/AgeEditText"
+        android:ems="10"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/EmailEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/EmailTextView"
+        android:layout_alignLeft="@+id/IdEditText"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/PhoneEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/TelTextView"
+        android:layout_alignBottom="@+id/TelTextView"
+        android:layout_alignLeft="@+id/EmailEditText"
+        android:ems="10"
+        android:inputType="phone"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/FamilynameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/FamilynameTextView"
+        android:layout_alignBottom="@+id/FamilynameTextView"
+        android:layout_alignLeft="@+id/PhoneEditText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/FamilytelEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/FamilytelTextView"
+        android:layout_alignBottom="@+id/FamilytelTextView"
+        android:layout_alignLeft="@+id/FamilynameEditText"
+        android:ems="10"
+        android:inputType="phone"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/NameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/NameTextView"
+        android:layout_alignBottom="@+id/NameTextView"
+        android:layout_alignLeft="@+id/AccountEditText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="30sp" >
+
+        
+    </EditText>
+
+    <EditText
+        android:id="@+id/AgeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/AgeTextView"
+        android:layout_alignLeft="@+id/NameEditText"
+        android:ems="10"
+        android:inputType="date"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/PasswordTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/PasswordTextView1"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="25dp"
+        android:text="確認密碼："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/PasswordTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PasswordTextView2"
+        android:layout_below="@+id/AccountEditText"
+        android:layout_marginTop="20dp"
+        android:password="false"
+        android:text="密碼："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <RadioGroup
+        android:id="@+id/EattimeRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/AgeTextView"
+        android:layout_alignLeft="@+id/AgeEditText"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/BefRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="男"
+            android:textSize="30sp" />
+
+        <RadioButton
+            android:id="@+id/AftRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="39dp"
+            android:text="女"
+            android:textSize="30sp" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/AccountEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/AccountTextView"
+        android:layout_alignBottom="@+id/AccountTextView"
+        android:layout_marginLeft="69dp"
+        android:layout_toRightOf="@+id/PasswordTextView2"
+        android:ems="10"
+        android:textSize="30sp" />
+    <requestFocus />
+    
+    <EditText
+        android:id="@+id/PasswordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/PasswordTextView1"
+        android:layout_alignBottom="@+id/PasswordTextView1"
+        android:layout_alignLeft="@+id/AccountEditText"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/CheckpasswordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/PasswordTextView2"
+        android:layout_alignLeft="@+id/PasswordEditText"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/AccountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/PasswordTextView1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="252dp"
+        android:text="帳號："
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/SignButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FamilytelEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/send_btn"
+        android:textSize="30sp" />
+    
+</RelativeLayout>

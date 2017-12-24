@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:layout_width="400dp"
+        android:layout_height="230dp"
+        android:layout_x="3dp"
+        android:layout_y="4dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/InsertDialogTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="名稱："
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/InsertDialogEditText"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:ems="10" >
+
+                <requestFocus />
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/InsertDialogTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="型態："
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <Spinner
+                android:id="@+id/InsertDialogSpinner"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/InsertDialogTextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="時間："
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/InsertDialogDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="點選選取提醒時間"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/InsertDialogTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="點選選取鬧鐘時間"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/InsertDialogTextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="每日重複："
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RadioGroup
+                android:id="@+id/InsertDialogRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/InsertDialogYesRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/InsertDialogNoRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No" />
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/InsertDialogTextView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="狀態："
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ToggleButton
+                android:id="@+id/InsertDialogToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ToggleButton" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/InsertDialogButton1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_x="8dp"
+        android:layout_y="250dp"
+        android:text="新增" />
+
+    <Button
+        android:id="@+id/InsertDialogButton2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_x="300dp"
+        android:layout_y="250dp"
+        android:text="取消" />
+
+    <Button
+        android:id="@+id/InsertDialogButton3"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_x="150dp"
+        android:layout_y="250dp"
+        android:text="刪除"
+        android:visibility="invisible" />
+
+</AbsoluteLayout>

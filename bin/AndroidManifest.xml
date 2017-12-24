@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.diabetes"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="9" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.diabetes.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.diabetes.SignActivity"
+            android:label="@string/title_activity_sign" >
+        </activity>
+        <activity
+            android:name="com.example.diabetes.RecordActivity"
+            android:label="@string/title_activity_record" >
+        </activity>
+        <activity
+            android:name="com.example.diabetes.RecordInsertActivity"
+            android:label="@string/title_activity_record_insert" >
+        </activity>
+        <activity
+            android:name="com.example.diabetes.RecordDetailActivity"
+            android:label="@string/title_activity_record_detail" >
+        </activity>
+        <activity
+            android:name="com.example.diabetes.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="com.example.diabetes.DoctorsRecommendActivity"
+            android:label="@string/title_activity_doctors_recommend" >
+        </activity>
+        <activity
+            android:name="com.example.diabetes.RemindActivity"
+            android:label="@string/title_activity_remind" >
+        </activity>
+        <activity
+            android:name="com.example.diabetes.InquiryActivity"
+            android:label="@string/title_activity_inquiry" >
+        </activity>
+        <receiver android:name="com.example.diabetes.MyReceiver" >
+            <intent-filter>
+                <action android:name="com.example.diabetes.action.BC_ACTION" />
+            </intent-filter>
+        </receiver>
+        
+    </application>
+
+</manifest>

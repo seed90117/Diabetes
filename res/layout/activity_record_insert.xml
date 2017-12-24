@@ -1,0 +1,257 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/record_insertground"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RecordInsertActivity" >
+
+    <TextView
+        android:id="@+id/InsertBSTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InsertBDTextView"
+        android:layout_below="@+id/InsertBDTextView"
+        android:layout_marginTop="30dp"
+        android:text="收縮壓"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/InsertBVTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InsertBSTextView"
+        android:layout_below="@+id/InsertBSTextView"
+        android:layout_marginTop="30dp"
+        android:text="血糖值"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/InsertIDTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InsertBVTextView"
+        android:layout_below="@+id/InsertBVTextView"
+        android:layout_marginTop="30dp"
+        android:text="胰島素劑量"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/InsertBDTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/DateTextView"
+        android:layout_marginRight="85dp"
+        android:layout_marginTop="83dp"
+        android:layout_toLeftOf="@+id/DateTextView"
+        android:text="舒張壓"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/InsertIDEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/InsertIDTextView"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="text|number"
+        android:singleLine="true"
+        android:text="0.2" />
+
+    <EditText
+        android:id="@+id/InsertBVEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InsertIDEditText"
+        android:layout_alignTop="@+id/InsertBVTextView"
+        android:ems="10"
+        android:inputType="text|number"
+        android:singleLine="true"
+        android:text="151" />
+
+    <EditText
+        android:id="@+id/InsertBSEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/InsertBSTextView"
+        android:layout_alignBottom="@+id/InsertBSTextView"
+        android:layout_alignLeft="@+id/InsertBVEditText"
+        android:ems="10"
+        android:inputType="number|text"
+        android:singleLine="true"
+        android:text="129" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/InsertBDEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InsertBSEditText"
+        android:layout_alignTop="@+id/InsertBDTextView"
+        android:ems="10"
+        android:inputType="number|text"
+        android:singleLine="true"
+        android:text="70" />
+
+    <Button
+        android:id="@+id/InsertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/send_btn" />
+
+    <TextView
+        android:id="@+id/InsertWTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InsertIDTextView"
+        android:layout_below="@+id/InsertIDEditText"
+        android:layout_marginTop="30dp"
+        android:text="體重"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/InsertDNTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InsertWTextView"
+        android:layout_below="@+id/InsertWTextView"
+        android:layout_marginTop="30dp"
+        android:text="藥物名稱"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/InsertWEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InsertIDEditText"
+        android:layout_alignTop="@+id/InsertWTextView"
+        android:ems="10"
+        android:inputType="text|number"
+        android:text="70" />
+
+    <EditText
+        android:id="@+id/InsertDNEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InsertWEditText"
+        android:layout_alignTop="@+id/InsertDNTextView"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:singleLine="false" />
+
+    <TextView
+        android:id="@+id/InsertSTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InsertDNTextView"
+        android:layout_below="@+id/InsertDNEditText"
+        android:layout_marginTop="30dp"
+        android:text="運動"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/InsertFTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InsertSTextView"
+        android:layout_below="@+id/InsertSTextView"
+        android:layout_marginTop="30dp"
+        android:text="食物"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/InsertSEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/InsertSTextView"
+        android:layout_alignBottom="@+id/InsertSTextView"
+        android:layout_alignLeft="@+id/InsertDNEditText"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:text="排球1小時" >
+        
+    </EditText>
+
+    <EditText
+        android:id="@+id/InsertFEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/InsertSEditText"
+        android:layout_alignTop="@+id/InsertFTextView"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <ImageButton
+        android:id="@+id/TakePhotoImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/InsertFEditText"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@+id/InsertFEditText"
+        android:background="@drawable/record_takepicture"
+        android:onClick="onGet" />
+
+    <ImageView
+        android:id="@+id/InsertImageView1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/InsertFTextView"
+        android:layout_below="@+id/InsertFEditText"
+        android:layout_marginTop="33dp" />
+
+    <ImageButton
+        android:id="@+id/SelectPhotoImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/InsertImageView1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/TakePhotoImageButton"
+        android:background="@drawable/record_upload"
+        android:onClick="onPick" />
+
+    <RadioGroup
+        android:id="@+id/SexRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/InsertBVEditText"
+        android:layout_toRightOf="@+id/InsertBVEditText"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/BefRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="飯前"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/AftRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="39dp"
+            android:text="飯後"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/DateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="218dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="40sp" />
+
+</RelativeLayout>

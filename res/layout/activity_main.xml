@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/LoginPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/LoginAccountTextView"
+        android:layout_below="@+id/LoginAccountTextView"
+        android:layout_marginTop="41dp"
+        android:text="密碼"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/LoginAccountEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/LoginPasswordEditText"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="39dp"
+        android:layout_toRightOf="@+id/LoginPasswordTextView"
+        android:ems="10"
+        android:singleLine="true"
+        android:textSize="30sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/LoginPasswordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signpage"
+        android:layout_alignLeft="@+id/LoginAccountEditText"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/signpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/LoginButton"
+        android:layout_alignBottom="@+id/LoginButton"
+        android:layout_alignRight="@+id/LoginPasswordEditText"
+        android:layout_marginRight="63dp"
+        android:background="@drawable/sign_btn" />
+
+    <Button
+        android:id="@+id/LoginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="324dp"
+        android:layout_toRightOf="@+id/LoginPasswordTextView"
+        android:background="@drawable/btn" />
+
+    <TextView
+        android:id="@+id/LoginAccountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/LoginAccountEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="145dp"
+        android:text="帳號"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30sp" />
+
+</RelativeLayout>
